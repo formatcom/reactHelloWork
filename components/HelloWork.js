@@ -2,7 +2,7 @@ import React from 'react'
 
 class HelloWork extends React.Component {
   render() {
-    return <span>Hola Mundo</span>
+    return <span>Hola Mundo Soy {this.props.name}</span>
   }
 }
 
