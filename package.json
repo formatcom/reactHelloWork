@@ -6,6 +6,7 @@
     "browserify": "browserify -t [ babelify --presets [ es2015 react ] --plugins [ babel-plugin-transform-decorators-legacy ] ] app.js -o dist/bundle.js",
     "bundle": "npm run static && npm run browserify",
     "start": "browser-sync start --no-open --no-notify --server dist",
+    "start:c9": "cd dist && python -m SimpleHTTPServer 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vinicio Valbuena",
